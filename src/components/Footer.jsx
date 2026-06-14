@@ -16,6 +16,7 @@ const Footer = ({setActiveTab}) => {
       
              <div className="mt-10">
                   <VerticalLine />
+                  
              </div>
        
         <div className="flex mt-3  mb-5 justify-center">
