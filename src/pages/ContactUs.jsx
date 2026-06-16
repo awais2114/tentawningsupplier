@@ -25,15 +25,18 @@ const ContactUs = () => {
                 className="mx-5 md:mx-20 mb-8 font-nunito"
                 dir="rtl"
             >
-                <h2 className="text-lg md:text-xl text-right mb-8">
-                    مؤسسة محمد سعيد محمد الهاجري للخيام ( المعروفة باسم مؤسسة الهاجري – تفصيل خيام والمظلات )
+                <h2 className="text-lg md:text-2xl text-right mb-8">
+                    (تفصيل خيام مظلات الرياض)
                 </h2>
 
                 <p className="text-xs md:text-sm text-right mb-6">
-                    طريق الامير سعد بن عبدالرحمن الاول الفرعي , حي السعادة
+                  Tentawningsupplier@gmail.com
                 </p>
+             <p className="text-xs md:text-sm text-right">
+                  00966551945089
+                </p> 
 
-                <p className="text-xs md:text-sm text-right">
+                <p className="text-xs md:text-sm text-right mt-5">
                     مدينة الرياض ، المملكة العربية السعودية
                 </p>
             </div>

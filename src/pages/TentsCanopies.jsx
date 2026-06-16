@@ -4,10 +4,31 @@ import "yet-another-react-lightbox/styles.css";
 import VerticalLine from "../components/VerticalLine";
 
 const images = [
-    "/tentImage.webp",
-    "/tentImage.webp",
-    "/tentImage.webp",
-    "/tentImage.webp",
+    "/tent1.jpeg",
+    "/tent2.jpeg",
+    "/tent3.jpeg",
+    "/tent4.jpeg",
+    "/tent5.jpeg",
+    "/tent6.jpeg",
+    "/tent7.jpeg",
+    "/tent8.jpeg",
+    "/tent9.jpeg",
+    "/tent10.jpeg",
+    "/tent11.jpeg",
+    "/tent12.jpeg",
+    "/tent13.jpeg",
+    "/tent14.jpeg",
+    "/tent15.jpeg",
+    "/tent16.jpeg",
+    "/tent17.jpeg",
+    "/tent18.jpeg",
+    "/tent19.jpeg",
+    "/tent20.jpeg",
+    "/tent21.jpeg",
+    "/tent22.jpeg",
+    "/tent23.jpeg",
+    "/tent24.jpeg",
+    "/tent25.jpeg",
 ];
 
 const TentsCanopies = () => {
