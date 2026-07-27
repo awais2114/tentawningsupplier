@@ -8,7 +8,7 @@ const ContactUs = () => {
             <VerticalLine />
             <div className="flex justify-center mt-5 mb-5">
                 <h2 className="font-nunito text-xl">
-                    اتصل بنا – 00966551945089
+                    اتصل بنا – 0551945089
                 </h2>
             </div>
             <div className="mx-5 md:mx-20 mb-5">

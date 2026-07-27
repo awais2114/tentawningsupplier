@@ -21,7 +21,7 @@ const TabList = ({setActiveTab,activeTab}) => {
                 ${activeTab === 'ContactUs' ? "border-gray-300" : "border-transparent hover:border-gray-300"
                     }`}
                     onClick={() => handleTabChange("ContactUs")}>
-                    اتصل بنا – 00966551945089
+                    اتصل بنا – 0551945089
                 </button>
                 <button 
                  className={`text-sm cursor-pointer font-nunito pb-2 border-b-2 transition-all duration-500 

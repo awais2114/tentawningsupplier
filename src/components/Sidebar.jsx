@@ -17,7 +17,13 @@ const Sidebar = ({setActiveTab}) => {
                     <div className="hidden md:flex space-x-4 sticky z-40 justify-end mt-8 mr-5">
                         <a href="#" className="hover:text-gray-200 text-xs"><FaInstagram size={15} color="#a79a9abc" /></a>
                         <a href="#" className="hover:text-gray-200 text-xs"><FaFacebook size={15} color="#a79a9abc" /></a>
-                        <a href="#" className="hover:text-gray-200 text-xs"><FaWhatsapp size={15} color="#a79a9abc" /></a>
+                        <a 
+                        href="https://wa.me/message/X2F5FAISV3J2I1"
+                        target="blank"
+                        rel="noopener noreferrer"
+                         className="hover:text-gray-200 text-xs">
+                            
+                            <FaWhatsapp size={15} color="#a79a9abc" /></a>
                         <a href="#" className="hover:text-gray-200 text-xs"><FaTwitter size={15} color="#a79a9abc" /></a>
                         <a href="#" className="hover:text-gray-200 text-xs"><FaYoutube size={15} color="#a79a9abc" /></a>
                     </div>
