@@ -33,7 +33,7 @@ const ContactUs = () => {
                   Tentawningsupplier@gmail.com
                 </p>
              <p className="text-xs md:text-sm text-right">
-                  00966551945089
+                 0551945089
                 </p> 
 
                 <p className="text-xs md:text-sm text-right mt-5">
