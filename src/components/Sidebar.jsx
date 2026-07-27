@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bussinessLogo from '/bussinessLogo.png'
+import bussinessLogo from '/bussinessLogo.jpeg'
 import { FaInstagram, FaFacebookF, FaTwitter, FaFacebook, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import ContactUs from "../pages/ContactUs";
 
