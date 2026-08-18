@@ -35,7 +35,7 @@ function Home() {
   };
   return (
     <>
-      <div className="w-full px-8 pt-4">
+      <div className="w-full px-8 pt-6">
 
         {/* Main Services Bar */}
         <div className="flex h-[40px] w-full overflow-hidden rounded-full bg-[#292b2f]">
@@ -81,10 +81,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="px-8 pt-4">
+      <div className="px-8 pt-6">
         <CarouselImage />
       </div>
-      <div className="w-full px-4">
+      <div className="w-full px-4 pt-6">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
 
           <div className="lg:col-span-4 mt-4">

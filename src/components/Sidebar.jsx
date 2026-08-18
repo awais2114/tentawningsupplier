@@ -3,6 +3,7 @@ import bussinessLogo from '/bussinessLogo.png'
 import { FaSearch, FaLinkedinIn, FaBars, FaUserCircle, FaInstagram, FaFacebookF, FaTwitter, FaFacebook, FaWhatsapp, FaYoutube, FaPhone, FaCampground, FaUsers, FaHome } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,9 @@ const Sidebar = () => {
             <FaLinkedinIn className="hover:text-blue-700 transition-colors duration-300" />
             <FaXTwitter className="hover:text-black transition-colors duration-300" />
             <FaFacebookF className="hover:text-blue-600 transition-colors duration-300" />
+           
           </div>
+          
 
           {/* Desktop Menu */}
           <div
@@ -50,7 +53,7 @@ const Sidebar = () => {
               الخميس، يوليو 30 2026
             </span>
 
-            <a className="text-xs font-bold text-white  hover:text-black p-3.5" href="#">معلومات عنا</a>
+            <a className="text-xs font-bold text-white dark:text-black hover:text-black p-3.5" href="#">معلومات عنا</a>
             <a className="text-xs font-bold text-white  hover:text-black p-3.5" href="#">تفصيل خيام والمظلات</a>
             <a className="text-xs font-bold text-white  hover:text-black p-3.5" href="#">إتصل بنا</a>
           </div>
@@ -91,6 +94,7 @@ const Sidebar = () => {
       {/* Tab List */}
       {/* Tab List */}
       <nav className="w-full h-14 bg-[#f4a201] block">
+        {/* <ThemeToggle /> */}
         <div className="mr-3 h-full">
           <ul
             dir="rtl"
