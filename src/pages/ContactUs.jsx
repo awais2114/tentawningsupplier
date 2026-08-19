@@ -8,7 +8,7 @@ const ContactUs = () => {
           {/* =========================
             SERVICE SEARCH - 4 COLUMNS
         ========================== */}
-        <div className="mt-4 lg:col-span-4">
+        <div className="mt-4 lg:col-span-4 hidden lg:block">
           <ServiceSearch />
         </div>
 
@@ -39,11 +39,11 @@ const ContactUs = () => {
             </h2>
 
             <p className="mb-6 text-right font-nunito text-xs md:text-sm">
-              Tentawningsupplier@gmail.com
+              Tafseelkhiyam@gmail.com
             </p>
 
             <p className="text-right font-nunito text-xs md:text-sm">
-              0551945089
+             00966551945089
             </p>
 
             <p className="mt-5 text-right font-nunito text-xs md:text-sm">

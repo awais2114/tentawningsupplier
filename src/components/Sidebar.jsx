@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import bussinessLogo from '/bussinessLogo.png'
-import { FaSearch, FaLinkedinIn, FaBars, FaUserCircle, FaInstagram, FaFacebookF, FaTwitter, FaFacebook, FaWhatsapp, FaYoutube, FaPhone, FaCampground, FaUsers, FaHome } from "react-icons/fa";
+import { FaSearch, FaLinkedinIn, FaBars, FaUserCircle, FaFacebookF, FaFacebook, FaWhatsapp, FaPhone, FaCampground, FaUsers, FaHome, FaSnapchatGhost, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
@@ -28,7 +28,7 @@ const Sidebar = () => {
         <div className="flex-1 bg-purple-400"></div>
       </div>
 
-      <header className="bg-[#3FA313] text-white">
+      <header className="bg-[#3FA313] hidden lg:block text-white">
         <div className="max-w-7xl mx-auto px-4 h-12 flex items-center justify-between">
 
           {/* Desktop Icons */}
@@ -36,13 +36,26 @@ const Sidebar = () => {
             <FaSearch className="hover:text-black transition-colors duration-300" />
             <FaBars className="hover:text-black transition-colors duration-300" />
             <FaUserCircle className="hover:text-black transition-colors duration-300" />
-            <FaWhatsapp className="hover:text-green-500 transition-colors duration-300" />
-            <FaLinkedinIn className="hover:text-blue-700 transition-colors duration-300" />
-            <FaXTwitter className="hover:text-black transition-colors duration-300" />
+           <a
+           target="blank"
+           href="https://wa.me/message/X2F5FAISV3J2I1">
+             <FaWhatsapp className="hover:text-green-500 transition-colors duration-300" />
+           </a>
+            <a
+            target="blank"
+            href="https://www.snapchat.com/add/s_gondal5?share_id=I6Qpzx5DfzE&locale=en-US">
+               <FaSnapchatGhost className="hover:text-yellow-300 transition-colors duration-300" />
+            </a>
+            <a
+            target="blank"
+             href="https://www.tiktok.com/@tafseel_khiyam?_r=1&_t=ZS-98iDRlD7BSe">
+              
+                <FaTiktok className="hover:text-black transition-colors duration-300" />
+            </a>
             <FaFacebookF className="hover:text-blue-600 transition-colors duration-300" />
-           
+
           </div>
-          
+
 
           {/* Desktop Menu */}
           <div
@@ -59,7 +72,7 @@ const Sidebar = () => {
           </div>
 
           {/* Mobile Navbar */}
-          <div className="lg:hidden flex justify-between items-center w-full">
+          <div className="hidden flex justify-between items-center w-full">
 
             {/* Logo or Date */}
             <span className="text-sm font-semibold">
@@ -74,7 +87,7 @@ const Sidebar = () => {
               <FaWhatsapp />
 
               {/* Sidebar Button */}
-              <button onClick={() => setIsOpen(true)}>
+              <button className="" onClick={() => setIsOpen(true)}>
                 <FaBars />
               </button>
 
@@ -86,21 +99,28 @@ const Sidebar = () => {
       </header>
 
       <div className="flex justify-end">
-        <img className="w-45 mr-6 mt-3 mb-3" src={bussinessLogo} alt="bussinesslogo" />
+        <img className=" hidden lg:block w-45 mr-6 mt-3 mb-3" src={bussinessLogo} alt="bussinesslogo" />
+      </div>
+      {/* mobile navbar and image */}
+      <div className="flex lg:hidden justify-between shadow-[0_4px_8px_rgba(0,0,0,0.12)] p-3">
+        <button onClick={() => setIsOpen(true)}>
+          <FaBars />
+        </button>
+        <img className="w-20" src={bussinessLogo} alt="bussinesslogo" />
       </div>
 
       {/* tab list for pages  */}
       {/* Tab List */}
       {/* Tab List */}
       {/* Tab List */}
-      <nav className="w-full h-14 bg-[#f4a201] block">
+      <nav className="hidden lg:block w-full h-14 bg-[#f4a201]">
         {/* <ThemeToggle /> */}
+
         <div className="mr-3 h-full">
           <ul
             dir="rtl"
-            className="flex items-center h-full m-0 p-0 list-none"
+            className="flex items-center h-full m-0 p-0 list-none gap-1"
           >
-
             {/* Home */}
             <li className="h-full">
               <NavLink
@@ -161,7 +181,6 @@ const Sidebar = () => {
                 إتصل بنا
               </NavLink>
             </li>
-
           </ul>
         </div>
       </nav>
@@ -195,27 +214,39 @@ const Sidebar = () => {
             dir="rtl"
           >
             <li className="border-b border-[#2a2b2f] pb-4 text-white">
-              <a className="flex items-center gap-3 " href="#">
+              <NavLink 
+               onClick={() => setIsOpen(false)}
+              to="/" className="flex items-center gap-3">
                 <FaHome />
-                سياسة الخصوصية</a>
+                سياسة الخصوصية
+              </NavLink>
             </li>
 
             <li className="border-b border-[#2a2b2f] pb-4 text-white">
-              <a className="flex items-center gap-3" href="#">
+              <NavLink
+               onClick={() => setIsOpen(false)}
+              to="/aboutUs" className="flex items-center gap-3">
                 <FaUsers />
-                معلومات عنا</a>
+                معلومات عنا
+              </NavLink>
             </li>
 
             <li className="border-b border-[#2a2b2f] pb-4 text-white">
-              <a className="flex items-center gap-3" href="#">
+              <NavLink
+               onClick={() => setIsOpen(false)}
+              to="/contactUs" className="flex items-center gap-3">
                 <FaPhone />
-                إتصل بنا</a>
+                إتصل بنا
+              </NavLink>
             </li>
 
-            <li className="border-b border-[#2a2b2f] pb-4 text-white flex  ">
-              <a className="flex items-center gap-3" href="#">
+            <li className="border-b border-[#2a2b2f] pb-4 text-white flex">
+              <NavLink
+               onClick={() => setIsOpen(false)}
+              to="/tent&canopies" className="flex items-center gap-3">
                 <FaCampground />
-                تفصيل خيام والمظلات</a>
+                تفصيل خيام والمظلات
+              </NavLink>
             </li>
           </ul>
 

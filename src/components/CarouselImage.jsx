@@ -2,25 +2,25 @@ import { useEffect, useState } from "react";
 
 const items = [
   {
-    image: "/tent1.jpeg",
+    image: "/tent9.jpeg",
     title: "شراء سكراب الطائف",
     description:
       "شراء سكراب الطائف من أبرز الخدمات التي نقدمها لعملائنا الراغبين في بيع مختلف أنواع المعادن والخامات.",
   },
   {
-    image: "/tent2.jpeg",
+    image: "/tent10.jpeg",
     title: "شركة عزل خزانات بالمدينة المنورة",
     description:
       "أفضل خدمات عزل الخزانات بأحدث الطرق والمواد المناسبة.",
   },
   {
-    image: "/tent3.jpeg",
+    image: "/tent11.jpeg",
     title: "نجار ابها",
     description:
       "أفضل خدمات النجارة والتركيب والصيانة.",
   },
   {
-    image: "/tent4.jpeg",
+    image: "/tent12.jpeg",
     title: "شراء اثاث مستعمل حي السلي",
     description:
       "نشتري جميع أنواع الأثاث المستعمل بأسعار مناسبة.",
@@ -129,13 +129,12 @@ function CarouselImage() {
               key={slideIndex}
               className="
                 min-w-full
-                max-w-full
-                flex-shrink-0
-                grid
-                grid-cols-1
-                sm:grid-cols-2
-                gap-3
-                md:gap-2
+  max-w-full
+  flex-shrink-0
+  grid
+  grid-cols-2
+  gap-2
+  sm:gap-3
               "
             >
               {items
@@ -166,13 +165,14 @@ function CarouselImage() {
                       }}
                       className="
                         relative
-                        overflow-hidden
-                        bg-white
-                        rounded-xl
-                        h-72
-                        sm:h-80
-                        md:h-80
-                        lg:h-[220px]
+  overflow-hidden
+  bg-white
+  rounded-xl
+  h-[170px]
+  xs:h-[180px]
+  sm:h-[220px]
+  md:h-[250px]
+  lg:h-[220px]
                       "
                     >
                       {/* =========================
@@ -217,20 +217,19 @@ function CarouselImage() {
                         dir="rtl"
                         className="
                           absolute
-                          top-3
-                          left-3
-                          right-3
-                          z-30
-                          text-center
-                          text-xl
-                          sm:text-2xl
-                          md:text-3xl
-                          lg:text-4xl
-                          font-semibold
-                          text-red-600
-                          leading-tight
+  top-2
+  left-2
+  right-2
+  z-30
+  text-center
+  text-[11px]
+  sm:text-sm
+  md:text-xl
+  lg:text-2xl
+  font-semibold
+  leading-tight
                         "
-                        style={{color:"#3FA313"}}
+                        style={{ color: "#3FA313" }}
                       >
                         {item.title}
                       </h2>
@@ -241,15 +240,18 @@ function CarouselImage() {
 
                       <div
                         className="
-                          absolute
-                          z-20
-                          left-1/2
-                          -translate-x-1/2
-                          top-[25%]
-                          w-[90%]
-                          aspect-square
-                          rounded-full
-                          overflow-hidden
+                         absolute
+  z-20
+  left-1/2
+  -translate-x-1/2
+  top-[25%]
+  w-[78%]
+  sm:w-[90%]
+  md:w-[85%]
+  lg:w-[90%]
+  aspect-square
+  rounded-full
+  overflow-hidden
                         "
                       >
                         {/* =========================
@@ -324,10 +326,12 @@ function CarouselImage() {
                           <h3
                             className="
                               text-sm
-                              sm:text-sm
+                             
                               md:text-sm
                               font-bold
                               mb-1
+                              sm:hidden
+                              md:block
                             "
                           >
                             {item.title}
@@ -335,11 +339,13 @@ function CarouselImage() {
 
                           <p
                             className="
+                            hidden
+                            lg:block
                               text-xs
-                              sm:text-sm
+                             
                               md:text-base
                               leading-5
-                              sm:leading-6
+                              
                               md:leading-7
                             "
                           >

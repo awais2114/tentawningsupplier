@@ -7,6 +7,8 @@ import {
   FaFacebookF,
   FaEye,
   FaFileAlt,
+  FaSnapchatGhost,
+  FaTiktok,
 } from "react-icons/fa";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -100,7 +102,8 @@ function ServiceSearch() {
 
         {/* WhatsApp */}
         <a
-          href="#"
+        target="blank"
+          href="https://wa.me/message/X2F5FAISV3J2I1"
           className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#3bd653] text-white transition duration-300 hover:scale-110"
         >
           <FaWhatsapp size={20} />
@@ -108,18 +111,20 @@ function ServiceSearch() {
 
         {/* LinkedIn */}
         <a
-          href="#"
-          className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#168acb] text-white transition duration-300 hover:scale-110"
+        target="blank"
+          href="https://www.snapchat.com/add/s_gondal5?share_id=I6Qpzx5DfzE&locale=en-US"
+          className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-yellow-400 text-white transition duration-300 hover:scale-110"
         >
-          <FaLinkedinIn size={20} />
+          <FaSnapchatGhost size={20} />
         </a>
 
         {/* X */}
         <a
-          href="#"
+        target="blank"
+          href="https://www.tiktok.com/@tafseel_khiyam?_r=1&_t=ZS-98iDRlD7BSe"
           className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black text-white transition duration-300 hover:scale-110"
         >
-          <FaXTwitter size={20} />
+          <FaTiktok size={20} />
         </a>
 
         {/* Facebook */}

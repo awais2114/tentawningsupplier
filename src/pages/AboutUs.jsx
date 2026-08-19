@@ -9,7 +9,7 @@ const AboutUs = () => {
           {/* =========================
             SERVICE SEARCH - 4 COLUMNS
         ========================== */}
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-4 hidden lg:block">
           <ServiceSearch />
         </div>
 

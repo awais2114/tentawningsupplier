@@ -42,7 +42,7 @@ const TentsCanopies = () => {
         {/* =========================
             SERVICE SEARCH - 4 COLUMNS
         ========================== */}
-        <div className="mt-4 lg:col-span-4">
+        <div className="mt-4 lg:col-span-4 hidden lg:block">
           <ServiceSearch />
         </div>
 

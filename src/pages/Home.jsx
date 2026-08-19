@@ -35,13 +35,13 @@ function Home() {
   };
   return (
     <>
-      <div className="w-full px-8 pt-6">
+      <div className="w-full px-3 md:px-8 pt-6">
 
         {/* Main Services Bar */}
         <div className="flex h-[40px] w-full overflow-hidden rounded-full bg-[#292b2f]">
 
           {/* Left Arrow Section */}
-          <div className="flex w-[100px] shrink-0 items-center justify-center gap-7 bg-[#25272b]">
+          <div className="hidden w-[100px] shrink-0 items-center justify-center gap-7 bg-[#25272b] sm:flex">
 
             <button
               onClick={previousService}
@@ -61,12 +61,12 @@ function Home() {
 
           {/* Service Text */}
           <div
-            className="flex flex-1 items-center overflow-hidden mr-3"
+            className="flex min-w-0 flex-1 items-center overflow-hidden px-3 sm:mr-3 sm:px-0"
             dir="rtl"
           >
             <div
               key={activeIndex}
-              className="whitespace-nowrap text-[12px] font-medium text-white animate-service-slide"
+              className="whitespace-nowrap text-[11px] font-medium text-white sm:text-[12px] animate-service-slide"
             >
               {services[activeIndex]}
             </div>
@@ -74,20 +74,21 @@ function Home() {
 
           {/* Red Right Section */}
           <div
-            className="flex min-w-[120px] items-center justify-center bg-[#f05255] px-7 text-[12px] font-semibold text-white"
+            className="flex min-w-[95px] shrink-0 items-center justify-center bg-[#f05255] px-3 text-[10px] font-semibold text-white sm:min-w-[120px] sm:px-7 sm:text-[12px]"
             dir="rtl"
           >
             أحدث الخدمات
           </div>
+
         </div>
       </div>
-      <div className="px-8 pt-6">
+      <div className="px-3 md:px-8 pt-6">
         <CarouselImage />
       </div>
       <div className="w-full px-4 pt-6">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
 
-          <div className="lg:col-span-4 mt-4">
+          <div className="lg:col-span-4 hidden lg:block mt-4">
             <ServiceSearch />
           </div>
           <div className="lg:col-span-8">
@@ -149,7 +150,7 @@ function Home() {
                 <img
                   src="/tent16.jpeg"
                   alt="برجولات الرياض"
-                  className="relative z-10 h-[220px]  w-[40%] object-cover"
+                  className="relative z-10 h-[220px]  md:w-[40%] object-cover"
                   style={{
                     borderTopLeftRadius: "120px",
                     borderBottomLeftRadius: "120px",
@@ -176,7 +177,7 @@ function Home() {
                 </h2>
 
                 {/* Description */}
-                <p className="mt-3 !text-[12px] w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
+                <p className="mt-3 !text-[12px] md:w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
                   برجولات الرياض ذات المادة الخام قوية التحمل والمظهر
                   الحديث الذي يزيد من جمال المكان نقدمها لكم شركتنا
                   بأرخص الأسعار وعلى...
@@ -197,7 +198,7 @@ function Home() {
             </div>
             {/* full width card 2  */}
             <div
-              className="relative mt-5 mb-20 w-full overflow-hidden rounded-[22px] border border-gray-200 bg-white p-5 sm:p-7"
+              className="relative mt-5 lg:mb-20 w-full overflow-hidden rounded-[22px] border border-gray-200 bg-white p-5 sm:p-7"
               dir="rtl"
             >
               {/* ================= TOP HEADER ================= */}
@@ -252,7 +253,7 @@ function Home() {
                 <img
                   src="/tent14.jpeg"
                   alt="برجولات الرياض"
-                  className="relative z-10 h-[220px]  w-[40%] object-cover"
+                  className="relative z-10 h-[220px]  md:w-[40%] object-cover"
                   style={{
                     borderTopLeftRadius: "120px",
                     borderBottomLeftRadius: "120px",
@@ -262,7 +263,7 @@ function Home() {
                 />
 
                 {/* Category Badge */}
-                <span className="absolute bottom-3 right-[30%] z-20 rounded-full bg-[#3aaa1d] px-3 py-1 !text-[12px] font-bold text-white">
+                <span className="absolute bottom-3 right-[40%] md:right-[30%] z-20 rounded-full bg-[#3aaa1d] px-3 py-1 !text-[12px] font-bold text-white">
                   هناجر
                 </span>
 
@@ -279,7 +280,7 @@ function Home() {
                 </h2>
 
                 {/* Description */}
-                <p className="mt-3 !text-[12px] w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
+                <p className="mt-3 !text-[12px] md:w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
                   هناجر بالرياض هناجر الرياض المميزة والقوية ذات القدرة على استيعاب أكبر كمية من الأدوات والموادتجدها بأفضل تصميم متوفرة في......
                 </p>
 
@@ -296,6 +297,9 @@ function Home() {
               </div>
 
             </div>
+          </div>
+           <div className="lg:col-span-4 block mb-5 lg:hidden">
+            <ServiceSearch />
           </div>
         </div>
       </div>

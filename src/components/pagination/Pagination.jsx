@@ -137,7 +137,7 @@ function Pagination() {
                     IMAGE
                 ================================= */}
 
-                <div className="relative h-[230px] w-full overflow-hidden rounded-[25px] md:h-[270px]">
+                <div className="relative h-[230px] w-full overflow-hidden rounded-[100px] md:rounded-[25px] md:h-[270px]">
 
                   <img
                     src={service.image}
@@ -146,7 +146,7 @@ function Pagination() {
                   />
 
                   {/* Category Badge */}
-                  <span className="absolute bottom-[15px] left-[15px] rounded-[25px] bg-[#3aaa21] px-[18px] py-2 text-xs font-medium text-white">
+                  <span className="absolute bottom-[15px] left-[40%] md:left-[15px] rounded-[25px] bg-[#3aaa21] px-[18px] py-2 text-xs font-medium text-white">
                     {service.category}
                   </span>
 
