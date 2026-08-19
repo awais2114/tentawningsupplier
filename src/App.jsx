@@ -9,7 +9,7 @@ import FloatingButtons from './components/FloatingButtons'
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import TentsCanopies from './pages/TentsCanopies';
-import Sidebar from './components/sidebar';
+import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 
 function App() {
