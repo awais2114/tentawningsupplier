@@ -140,7 +140,7 @@ const Sidebar = () => {
             {/* Tent & Canopies */}
             <li className="h-full">
               <NavLink
-                to="/tent&canopies"
+                to="/تفصيل-خيام-والمظلات"
                 className={({ isActive }) =>
                   `h-full flex items-center justify-center px-5 text-sm font-bold ${isActive
                     ? "bg-black text-white"
@@ -155,7 +155,7 @@ const Sidebar = () => {
             {/* About */}
             <li className="h-full">
               <NavLink
-                to="/aboutUs"
+                to="/معلومات-عنا"
                 className={({ isActive }) =>
                   `h-full flex items-center justify-center px-5 text-sm font-bold ${isActive
                     ? "bg-black text-white"
@@ -170,7 +170,7 @@ const Sidebar = () => {
             {/* Contact */}
             <li className="h-full">
               <NavLink
-                to="/contactUs"
+                to="/إتصل-بنا"
                 className={({ isActive }) =>
                   `h-full flex items-center justify-center px-5 text-sm font-bold ${isActive
                     ? "bg-black text-white"
@@ -225,7 +225,7 @@ const Sidebar = () => {
             <li className="border-b border-[#2a2b2f] pb-4 text-white">
               <NavLink
                onClick={() => setIsOpen(false)}
-              to="/aboutUs" className="flex items-center gap-3">
+              to="/معلومات-عنا" className="flex items-center gap-3">
                 <FaUsers />
                 معلومات عنا
               </NavLink>
@@ -234,7 +234,7 @@ const Sidebar = () => {
             <li className="border-b border-[#2a2b2f] pb-4 text-white">
               <NavLink
                onClick={() => setIsOpen(false)}
-              to="/contactUs" className="flex items-center gap-3">
+              to="/إتصل-بنا" className="flex items-center gap-3">
                 <FaPhone />
                 إتصل بنا
               </NavLink>
@@ -243,7 +243,7 @@ const Sidebar = () => {
             <li className="border-b border-[#2a2b2f] pb-4 text-white flex">
               <NavLink
                onClick={() => setIsOpen(false)}
-              to="/tent&canopies" className="flex items-center gap-3">
+              to="/تفصيل-خيام-والمظلات" className="flex items-center gap-3">
                 <FaCampground />
                 تفصيل خيام والمظلات
               </NavLink>

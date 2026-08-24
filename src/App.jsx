@@ -24,9 +24,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/tent&canopies" element={<TentsCanopies />} />
+          <Route path="/معلومات-عنا" element={<AboutUs />} />
+          <Route path="/إتصل-بنا" element={<ContactUs />} />
+          <Route path="/تفصيل-خيام-والمظلات" element={<TentsCanopies />} />
 
           
         </Routes>
