@@ -17,22 +17,22 @@ function ServiceSearch() {
   const services = [
     {
       id: 1,
-      title: "شركة تسليك مجاري بمكة",
+      title: "جناح جلوس خارجي فاخر",
       image: "/tent8.jpeg",
     },
     {
       id: 2,
-      title: "شركة تمديد غاز مركزي بجدة",
+      title: "مظلة سيارات منحنية عصرية",
       image: "/tent9.jpeg",
     },
     {
       id: 3,
-      title: "تنظيف بيارات بجدة",
+      title: "برجولا حديقة بجلسات مريحة",
       image: "/tent10.jpeg",
     },
     {
       id: 4,
-      title: "كمبروسور شفط مجاري جدة",
+      title: "برجولا ليلية بإضاءة ساحرة",
       image: "/tent11.jpeg",
     },
   ];

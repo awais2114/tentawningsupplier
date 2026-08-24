@@ -161,7 +161,7 @@ function Home() {
 
                 {/* Category Badge */}
                 <span className="absolute bottom-3 right-[30%] z-20 rounded-full bg-[#3aaa1d] px-3 py-1 !text-[12px] font-bold text-white">
-                  خدماتنا الأخرى
+                 خيام ملكية
                 </span>
 
               </div>
@@ -173,14 +173,12 @@ function Home() {
 
                 {/* Title */}
                 <h2 className="!text-[18px] !font-bold leading-9 text-[#333] sm:text-[28px]">
-                  برجولات الرياض خصم 40%
+                  خيمة زجاجية صحراوية فاخرة
                 </h2>
 
                 {/* Description */}
                 <p className="mt-3 !text-[12px] md:w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
-                  برجولات الرياض ذات المادة الخام قوية التحمل والمظهر
-                  الحديث الذي يزيد من جمال المكان نقدمها لكم شركتنا
-                  بأرخص الأسعار وعلى...
+                 جناح خارجي ملكي بواجهات زجاجية وإضاءة داخلية دافئة، مثالي كمجلس ضيافة صحراوي راقٍ...
                 </p>
 
                 {/* Read More */}
@@ -251,7 +249,7 @@ function Home() {
 
                 {/* Main Image */}
                 <img
-                  src="/tent14.jpeg"
+                  src="/tent25.jpeg"
                   alt="برجولات الرياض"
                   className="relative z-10 h-[220px]  md:w-[40%] object-cover"
                   style={{
@@ -264,7 +262,7 @@ function Home() {
 
                 {/* Category Badge */}
                 <span className="absolute bottom-3 right-[40%] md:right-[30%] z-20 rounded-full bg-[#3aaa1d] px-3 py-1 !text-[12px] font-bold text-white">
-                  هناجر
+                  هياكل متكاملة
                 </span>
 
               </div>
@@ -276,12 +274,12 @@ function Home() {
 
                 {/* Title */}
                 <h2 className="!text-[18px] !font-bold leading-9 text-[#333] sm:text-[28px]">
-                  هناجر الرياض خصم 40%
+                  جناح خارجي عصري أنيق
                 </h2>
 
                 {/* Description */}
                 <p className="mt-3 !text-[12px] md:w-[30%] leading-8 text-gray-400 !font-bold sm:text-[18px]">
-                  هناجر بالرياض هناجر الرياض المميزة والقوية ذات القدرة على استيعاب أكبر كمية من الأدوات والموادتجدها بأفضل تصميم متوفرة في......
+                  جناح ضيافة خارجي بتصميم هندسي عصري، يجمع بين اللون الأسود الأنيق والخطوط البيضاء مع واجهات زجاجية واسعة.......
                 </p>
 
                 {/* Read More */}
