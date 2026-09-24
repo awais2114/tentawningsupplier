@@ -22,7 +22,7 @@ function FloatingButtons() {
             </a>
 
             <a
-                href="tel:+966XXXXXXXXX"
+                href="tel:+966551945089"
                 className="fixed bottom-3 right-1 z-50"
             >
                 <div className="relative">

@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div className="container-fluid">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:px-5 lg:py-5">
-          {/* =========================
+        {/* =========================
             SERVICE SEARCH - 4 COLUMNS
         ========================== */}
         <div className="mt-4 lg:col-span-4 hidden lg:block">
@@ -22,7 +22,7 @@ const ContactUs = () => {
             <div className="w-full overflow-hidden rounded-lg">
               <iframe
                 className="h-[300px] w-full sm:h-[400px] md:h-[500px]"
-                src="https://maps.google.com/maps?q=Saudi%20Arabia&t=&z=6&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=تفصيل%20خيام%20و%20مظلات%20الرياض%2C%20Exit%2015%2C%20Prince%20Saad%20Bin%20Abdurrahman%20Al%20Awal%20Road%2C%20Riyadh&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 loading="lazy"
                 title="Saudi Arabia Map"
               />
@@ -43,7 +43,7 @@ const ContactUs = () => {
             </p>
 
             <p className="text-right font-nunito text-xs md:text-sm">
-             00966551945089
+              00966551945089
             </p>
 
             <p className="mt-5 text-right font-nunito text-xs md:text-sm">
@@ -52,7 +52,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-      
+
 
       </div>
     </div>
